@@ -1,6 +1,5 @@
 package oy.tol.tra;  
-  
-public class Grades {  
+  public class Grades {  
    private Integer[] grades = null;  
   
    public Grades(Integer[] grades) {  
