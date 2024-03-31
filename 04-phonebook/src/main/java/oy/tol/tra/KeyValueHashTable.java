@@ -117,7 +117,6 @@ public V find(K key) throws IllegalArgumentException {
         Algorithms.fastSort(sorted);
         return sorted;
       }
-
       private boolean shouldReallocate() {  
         return ((double)count / values.length) > LOAD_FACTOR;  
     }  

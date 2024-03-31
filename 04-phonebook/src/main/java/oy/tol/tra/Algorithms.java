@@ -1,5 +1,6 @@
 package oy.tol.tra;
 
+import java.util.Comparator;
 import java.util.function.Predicate;
 
  
@@ -58,14 +59,14 @@ public class Algorithms {
     }
  
     public static <K extends Comparable<K>, V> int partitionByRule(Pair<K, V>[] arr, int count, Predicate<Pair<K, V>> rule) {
-        int index = 0; // 使用更具描述性的变量名
+        int index = 0;  
         for (int i = 0; i < count; i++) {
             if (rule.test(arr[i])) {
-                // 使用额外的变量来存储要交换的元素
+               
                 Pair<K, V> temp = arr[i];
                 arr[i] = arr[index];
                 arr[index] = temp;
-                index++; // 一次性进行交换
+                index++;  
             }
         }
         return index;
